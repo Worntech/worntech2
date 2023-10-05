@@ -1,0 +1,237 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Services</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="CareMed demo project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{% static 'web/styles/bootstrap4/bootstrap.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/plugins/OwlCarousel2-2.2.1/animate.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/styles/services.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/styles/services_responsive.css' %}">
+</head>
+<body>
+
+<div class="super_container">
+	
+	<!-- Home -->
+
+	<div class="home">
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="{% static 'web/images/services.jpg' %}" data-speed="0.8"></div>
+		<div class="home_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="home_content">
+							<div class="home_title"><span>Worntech</span> Services</div>
+							<div class="breadcrumbs">
+								<ul>
+									<li><a href="#">Home</a></li>
+									<li>Services provided</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Services -->
+
+	<div class="services">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title"><h2>Our Services Provided</h2></div>
+				</div>
+			</div>
+			<div class="row services_row">
+				
+				<!-- Service -->
+				<div class="col-lg-4 col-md-6 service_col">
+					<a href="services.html">
+						<div class="service text-center trans_200">
+							<div class="service_icon"><img class="svg" src="{% static 'web/images/service_1.svg' %}" alt=""></div>
+							<div class="service_title trans_200">Website development</div>
+							<div class="service_text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<!-- Service -->
+				<div class="col-lg-4 col-md-6 service_col">
+					<a href="services.html">
+						<div class="service text-center trans_200">
+							<div class="service_icon"><img class="svg" src="{% static 'web/images/service_2.svg' %}" alt=""></div>
+							<div class="service_title trans_200">Mobile application</div>
+							<div class="service_text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<!-- Service -->
+				<div class="col-lg-4 col-md-6 service_col">
+					<a href="services.html">
+						<div class="service text-center trans_200">
+							<div class="service_icon"><img class="svg" src="{% static 'web/images/service_3.svg' %}" alt=""></div>
+							<div class="service_title trans_200">internet of things(iot)</div>
+							<div class="service_text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<!-- Service -->
+				<div class="col-lg-4 col-md-6 service_col">
+					<a href="services.html">
+						<div class="service text-center trans_200">
+							<div class="service_icon"><img class="svg" src="{% static 'web/images/service_4.svg' %}" alt=""></div>
+							<div class="service_title trans_200">Automation</div>
+							<div class="service_text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<!-- Service -->
+				<div class="col-lg-4 col-md-6 service_col">
+					<a href="services.html">
+						<div class="service text-center trans_200">
+							<div class="service_icon"><img class="svg" src="{% static 'web/images/service_5.svg' %}" alt=""></div>
+							<div class="service_title trans_200">Desktop application</div>
+							<div class="service_text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<!-- Service -->
+				<div class="col-lg-4 col-md-6 service_col">
+					<a href="services.html">
+						<div class="service text-center trans_200">
+							<div class="service_icon"><img class="svg" src="{% static 'web/images/service_6.svg' %}" alt=""></div>
+							<div class="service_title trans_200">Chat bot</div>
+							<div class="service_text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Features -->
+
+	<div class="features">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="features_container d-flex flex-row flex-wrap align-items-start justify-content-between">
+						
+						<!-- Feature -->
+						<div class="feature">
+							<div class="feature_image"><img src="{% static 'web/images/15.jpg' %}" alt=""></div>
+							<div class="feature_content">
+								<div class="section_title"><h2>Block chain technology</h2></div>
+								<div class="feature_text">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semp er solli citudin. Aliquam nec dapibus massa.</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Feature -->
+						<div class="feature">
+							<div class="feature_image"><img src="{% static 'web/images/14.jpg' %}" alt=""></div>
+							<div class="feature_content">
+								<div class="section_title"><h2>Automatic system for irigation</h2></div>
+								<div class="feature_text">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semp er solli citudin. Aliquam nec dapibus massa.</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Feature -->
+						<div class="feature">
+							<div class="feature_image"><img src="{% static 'web/images/11.jpg' %}" alt=""></div>
+							<div class="feature_content">
+								<div class="section_title"><h2>Automatic voting system</h2></div>
+								<div class="feature_text">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semp er solli citudin. Aliquam nec dapibus massa.</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	<!-- Text Section -->
+
+	<div class="text_section">
+		<div class="container">
+			<div class="row">
+				
+				<!-- Text Section Image -->
+				<div class="col-lg-5">
+					<div class="text_section_image"><img src="{%  static 'web/images/14.jpg' %}" alt=""></div>
+				</div>
+
+				<!-- Text Section Content -->
+				<div class="col-lg-7">
+					<div class="text_section_content">
+						<div class="section_title"><h2>Worntech great developer team</h2></div>
+						<div class="text_section_text">
+							<p>We the company with great developer team who can help you to develop your project and reach the goals that you want to reach and manage your company or individual bussness. Working with us also develop much technology to you since instead of developing you project also you can learn the developing technology from our sites and youtube channel especially web development, internet of things(iot), automation, Artificial intelligence(computer vision, natural language, data science and machine learning) and desktop application.</p>
+						</div>
+						<div class="button text_section_button"><a href="#">send project request</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Call to action -->
+
+	<div class="cta">
+		<div class="cta_background parallax-window" data-parallax="scroll" data-image-src="{% static 'web/images/17.jpg' %}" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="cta_content text-center">
+						<h2>Your in need in any project or system?</h2>
+						<p>We are here to develop project for you and you will enjoy the services </p>
+						<div class="button cta_button"><a href="#">send project request</a></div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+</div>
+
+<script src="{% static 'web/js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'web/styles/bootstrap4/popper.js' %}"></script>
+<script src="{% static 'web/styles/bootstrap4/bootstrap.min.js' %}"></script>
+<script src="{% static 'web/plugins/easing/easing.js' %}"></script>
+<script src="{% static 'web/plugins/parallax-js-master/parallax.min.js' %}"></script>
+<script src="{% static 'web/js/services.js' %}"></script>
+</body>
+</html>
+{% endblock %}

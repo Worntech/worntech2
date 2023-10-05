@@ -1,0 +1,100 @@
+{% extends "base1.html" %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+                
+        <!-- Boxicons CSS -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+        <style type="text/css">
+            /* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+        </style>
+                        
+    </head>
+    <body>
+
+
+        <div class="w3-container">
+            {% for m in messages %}
+            <p style="color:rgb(10, 159, 79)">{{m}}</p>
+            {% endfor %}
+          <h2>Project Orders</h2>
+          <div class="w3-responsive">
+          <table class="w3-table-all">
+            
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Contact</th>
+            <th>Date</th>
+         
+          </tr>
+          {% for x in projectorder %}
+          <tr>
+            <td>{{x.name}}</td>
+            <td>{{x.email}}</td>
+            <td>{{x.phone}}</td>
+            <td>{{x.date_created}}</td>
+            <td><a href="{% url 'viewprojectorder' x.id %}">View Order</a></td>
+
+          </tr>
+          {% endfor %}
+          </table>
+          </div>
+          
+          </div>
+
+
+        <!-- JavaScript -->
+        <script>
+            const forms = document.querySelector(".forms"),
+      pwShowHide = document.querySelectorAll(".eye-icon"),
+      links = document.querySelectorAll(".link");
+
+pwShowHide.forEach(eyeIcon => {
+    eyeIcon.addEventListener("click", () => {
+        let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
+        
+        pwFields.forEach(password => {
+            if(password.type === "password"){
+                password.type = "text";
+                eyeIcon.classList.replace("bx-hide", "bx-show");
+                return;
+            }
+            password.type = "password";
+            eyeIcon.classList.replace("bx-show", "bx-hide");
+        })
+        
+    })
+})      
+
+links.forEach(link => {
+    link.addEventListener("click", e => {
+       e.preventDefault(); //preventing form submit
+       forms.classList.toggle("show-signup");
+    })
+})
+            
+
+        </script>
+    </body>
+</html>
+
+{% endblock %}
+
+

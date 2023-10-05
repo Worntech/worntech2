@@ -1,0 +1,228 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>News</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="CareMed demo project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{% static 'web/styles/bootstrap4/bootstrap.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/plugins/OwlCarousel2-2.2.1/animate.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/styles/news.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/styles/news_responsive.css' %}">
+</head>
+<body>
+
+<div class="super_container">
+	
+	<!-- Home -->
+
+	<div class="home">
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="{% static 'web/images/17.jpg' %}" data-speed="0.8"></div>
+		<div class="home_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="home_content">
+							<div class="home_title"><span>Worntech</span> News</div>
+							<div class="breadcrumbs">
+								<ul>
+									<li><a href="#">Home</a></li>
+									<li>News</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- News -->
+
+	<div class="news">
+		<div class="container">
+			<div class="row">
+				
+				<!-- News Posts -->
+				<div class="col-lg-8">
+					<div class="news_posts">
+						
+						<!-- News Post -->
+						<div class="news_post">
+							<div class="news_image">
+								<img src="{% static 'web/images/1.jpg' %}" alt="">
+								<div class="news_date d-flex flex-column align-items-center justify-content-center">
+										<div class="news_day">15</div>
+										<div class="news_month">March</div>
+								</div>
+							</div>
+							<div class="news_body">
+								<div class="news_title"><a href="#">Automatic irigation system</a></div>
+								<div class="news_info">
+									<ul>
+										<li class="news_author"><span>By </span><a href="#">Developed by Worntech</a></li>
+										<li class="news_tags"><span>in </span><a href="#">Automation</a></li>
+										<li class="news_comments"><a href="#">3 Comments</a></li>
+									</ul>
+								</div>
+								<div class="news_text">
+									<p>This is the project that helps people in their irrigation system, They can manage their farms and all condition occuring in the farm by using only mobile phone or computer while their at here home.</p>
+								</div>
+								<div class="news_link"><a href="#">Read More</a></div>
+							</div>
+						</div>
+
+						<!-- News Post -->
+						<div class="news_post">
+							<div class="news_image">
+								<img src="{% static 'web/images/7.jpg' %}" alt="">
+								<div class="news_date d-flex flex-column align-items-center justify-content-center">
+										<div class="news_day">15</div>
+										<div class="news_month">March</div>
+								</div>
+							</div>
+							<div class="news_body">
+								<div class="news_title"><a href="#">Automatic security system</a></div>
+								<div class="news_info">
+									<ul>
+										<li class="news_author"><span>Developed by </span><a href="#">Worntech</a></li>
+										<li class="news_tags"><span>in </span><a href="#">Automation</a></li>
+										<li class="news_comments"><a href="#">3 Comments</a></li>
+									</ul>
+								</div>
+								<div class="news_text">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semp er solli citudin. Aliquam nec dapibus massa.</p>
+								</div>
+								<div class="news_link"><a href="#">Read More</a></div>
+							</div>
+						</div>
+
+						<!-- News Post -->
+						<div class="news_post">
+							<div class="news_image">
+								<img src="{% static 'web/images/4.jpg' %}" alt="">
+								<div class="news_date d-flex flex-column align-items-center justify-content-center">
+										<div class="news_day">15</div>
+										<div class="news_month">March</div>
+								</div>
+							</div>
+							<div class="news_body">
+								<div class="news_title"><a href="#">School management system</a></div>
+								<div class="news_info">
+									<ul>
+										<li class="news_author"><span>Developed by </span><a href="#">Worntech</a></li>
+										<li class="news_tags"><span>in </span><a href="#">Web development</a></li>
+										<li class="news_comments"><a href="#">3 Comments</a></li>
+									</ul>
+								</div>
+								<div class="news_text">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semp er solli citudin. Aliquam nec dapibus massa.</p>
+								</div>
+								<div class="news_link"><a href="#">Read More</a></div>
+							</div>
+						</div>
+
+					</div>
+					<div class="news_page_nav">
+						<ul>
+							<li class="active"><a href="#">01.</a></li>
+							<li><a href="#">02.</a></li>
+							<li><a href="#">03.</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Sidebar -->
+				<div class="col-lg-4">
+					<div class="sidebar">
+
+						<!-- Search -->
+						<div class="sidebar_search">
+							<form action="#" id="sidebar_search_form" class="sidebar_search_form">
+								<input type="text" class="search_input" placeholder="Search" required="required">
+								<button class="search_button"><img src="{% static 'web/images/search.png' %}" alt=""></button>
+							</form>
+						</div>
+
+						<!-- Categories -->
+						<div class="sidebar_categories sidebar_section">
+							<div class="sidebar_section_title">
+								<div class="sidebar_title">Categories</div>
+							</div>
+							<ul>
+								<li><a href="#">Website development</a></li>
+								<li><a href="#">Mobile application</a></li>
+								<li><a href="#">internet of things(iot)</a></li>
+								<li><a href="#">Desktop application</a></li>
+								<li><a href="#">Chat bot</a></li>
+							</ul>
+						</div>
+
+						<!-- Archives -->
+						<div class="sidebar_archives sidebar_section">
+							<div class="sidebar_section_title">
+								<div class="sidebar_title">Archives</div>
+							</div>
+							<ul>
+								<li><a href="#">December 2017</a></li>
+								<li><a href="#">January 2018</a></li>
+								<li><a href="#">February 2018</a></li>
+								<li><a href="#">March 2018</a></li>
+							</ul>
+						</div>
+
+						<!-- Working Hours -->
+						<div class="box working_hours">
+							<div class="box_icon d-flex flex-column align-items-start justify-content-center"><div style="width:29px; height:29px;"><img src="{% static 'web/images/alarm-clock.svg' %}" alt=""></div></div>
+							<div class="box_title">Working Hours</div>
+							<div class="working_hours_list">
+								<ul>
+									<li class="d-flex flex-row align-items-center justify-content-start">
+										<div>Monday – Friday</div>
+										<div class="ml-auto">8.00 – 22.00</div>
+									</li>
+									<li class="d-flex flex-row align-items-center justify-content-start">
+										<div>Saturday</div>
+										<div class="ml-auto">Not working</div>
+									</li>
+									<li class="d-flex flex-row align-items-center justify-content-start">
+										<div>Sunday</div>
+										<div class="ml-auto">8.00 – 22.00</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- Ad -->
+						<div class="ad d-flex flex-column align-items-center justify-content-end">
+							<div class="ad_background" style="background-image:url(images/ad.jpg)"></div>
+							<div class="ad_content">
+								<div class="ad_text">Come and take a <span>request project</span></div>
+								<div class="button ad_button"><a href="#">project request</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<script src="{% static 'web/js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'web/styles/bootstrap4/popper.js' %}"></script>
+<script src="{% static 'web/styles/bootstrap4/bootstrap.min.js' %}"></script>
+<script src="{% static 'web/plugins/easing/easing.js' %}"></script>
+<script src="{% static 'web/plugins/parallax-js-master/parallax.min.js' %}"></script>
+<script src="{% static 'web/js/news.js' %}"></script>
+</body>
+</html>
+{% endblock %}

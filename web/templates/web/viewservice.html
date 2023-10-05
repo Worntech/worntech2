@@ -1,0 +1,169 @@
+{% extends "index.html" %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Services Provided</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="CareMed demo project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{% static 'web/styles/bootstrap4/bootstrap.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/plugins/OwlCarousel2-2.2.1/animate.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/styles/news.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/styles/news_responsive.css' %}">
+</head>
+<body>
+
+<div class="super_container">
+	
+	<!-- Home -->
+
+	<div class="home">
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="{% static 'web/images/17.jpg' %}" data-speed="0.8"></div>
+		<div class="home_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="home_content">
+							<div class="home_title"><span>Worntech</span> Services Provided</div>
+							<div class="breadcrumbs">
+								<ul>
+									<li><a href="#">Home</a></li>
+									<li>Services Provided</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- News -->
+
+	<div class="news">
+		<div class="container">
+			<div class="row">
+				
+				<!-- News Posts -->
+				<div class="col-lg-8">
+					<div class="news_posts">
+						
+						<!-- News Post -->
+						<div class="news_post">
+							<div class="news_image">
+								<img src="{{service.image.url}}" alt="">
+								<div class="news_date d-flex flex-column align-items-center justify-content-center">
+										<div class="news_day"></div>
+										<div class="news_month"></div>
+								</div>
+							</div>
+							<div class="news_body">
+								<div class="news_title"><a href="#">{{service.Project_name}}</a></div>
+								<div class="news_info">
+									<ul>
+										<li class="news_author"><span></span><a href="#">Provided by Worntech</a></li>
+										<li class="news_tags"><span></span><a href="#"></a></li>
+										<li class="news_comments"><a href="#">3 Comments</a></li>
+									</ul>
+								</div>
+								<div class="news_text">
+									<p>{{service.Project_explanations}}</p>
+								</div>
+								<div class="news_link"><a href="#">Read More</a></div>
+							</div>
+                            {% if user.is_superuser %}
+                <p><a class="btn btn-sm btn-info" href="{% url 'updateservice' service.id %}">Update</a></p>
+                <p><a class="btn btn-sm btn-info" href="{% url 'deleteservice' service.id %}">Delete</a></p>
+                {% endif %}
+
+						</div>
+
+
+					</div>
+					<div class="news_page_nav">
+						<ul>
+							<li class="active"><a href="#">01.</a></li>
+							<li><a href="#">02.</a></li>
+							<li><a href="#">03.</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Sidebar -->
+				<div class="col-lg-4">
+					<div class="sidebar">
+
+
+						<!-- Categories -->
+						<div class="sidebar_categories sidebar_section">
+							<div class="sidebar_section_title">
+								<div class="sidebar_title">Categories</div>
+							</div>
+							<ul>
+								<li><a href="#">Website development</a></li>
+								<li><a href="#">Mobile application</a></li>
+								<li><a href="#">internet of things(iot)</a></li>
+								<li><a href="#">Desktop application</a></li>
+								<li><a href="#">Chat bot</a></li>
+                                <li><a href="#">Innovation</a></li>
+							</ul>
+						</div>
+
+						<!-- Archives -->
+						<div class="sidebar_archives sidebar_section">
+							<div class="sidebar_section_title">
+								<div class="sidebar_title">In Need</div>
+							</div>
+							<ul>
+								<li><a href="#">School  management System</a></li>
+								<li><a href="#">Hospital Management System</a></li>
+								<li><a href="#">Home Security System</a></li>
+								<li><a href="#">Smart Agriculuture System</a></li>
+							</ul>
+						</div>
+
+						<!-- Working Hours -->
+						<div class="box working_hours">
+							<div class="box_icon d-flex flex-column align-items-start justify-content-center"><div style="width:29px; height:29px;"><img src="{% static 'web/images/alarm-clock.svg' %}" alt=""></div></div>
+							<div class="box_title">Working Hours</div>
+							<div class="working_hours_list">
+								<ul>
+									<li class="d-flex flex-row align-items-center justify-content-start">
+										<div>Monday – Friday</div>
+										<div class="ml-auto">8.00 – 22.00</div>
+									</li>
+									<li class="d-flex flex-row align-items-center justify-content-start">
+										<div>Saturday</div>
+										<div class="ml-auto">Not working</div>
+									</li>
+									<li class="d-flex flex-row align-items-center justify-content-start">
+										<div>Sunday</div>
+										<div class="ml-auto">8.00 – 22.00</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<script src="{% static 'web/js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'web/styles/bootstrap4/popper.js' %}"></script>
+<script src="{% static 'web/styles/bootstrap4/bootstrap.min.js' %}"></script>
+<script src="{% static 'web/plugins/easing/easing.js' %}"></script>
+<script src="{% static 'web/plugins/parallax-js-master/parallax.min.js' %}"></script>
+<script src="{% static 'web/js/news.js' %}"></script>
+</body>
+</html>
+{% endblock %}

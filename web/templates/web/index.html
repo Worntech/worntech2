@@ -1,0 +1,321 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Worntech||The Technology Center</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="CareMed demo project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{% static 'web/styles/bootstrap4/bootstrap.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/plugins/OwlCarousel2-2.2.1/animate.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/styles/main_styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web/styles/responsive.css' %}">
+<style>
+.home_slider_background {
+	background: url('{% static "web/images/26.jpg" %}');
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+</style>
+
+</head>
+<body>
+
+<div class="super_container">
+	
+	<!-- Header -->
+
+
+	
+	<!-- Home -->
+
+
+	<div class="home">
+		<div class="home_slider_container">
+			<!-- Home Slider -->
+			<div class="owl-carousel owl-theme home_slider">
+				
+				<!-- Slider Item -->
+				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:{% url '(web/images/26.jpg)' %"></div>
+					<div class="home_content">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="home_content_inner">
+										<div class="home_title"><h1>Develop project with us</h1></div>
+										<div class="home_text">
+											<p>Welcome to Worntech company that offer development of project like software project and other embended sytem</p>
+										</div>
+										<div class="button home_button">
+											<a href="{% url 'requestService' %}">send project request</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Slider Item -->
+				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url(images/26.jpg)"></div>
+					<div class="home_content">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="home_content_inner">
+										<div class="home_title"><h1>Medicine made with care</h1></div>
+										<div class="home_text">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris quis aliquam. Integer accumsan sodales odio, id tempus velit ullamcorper id. Quisque at erat eu.</p>
+										</div>
+										<div class="button home_button">
+											<a href="#">read more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Slider Item -->
+				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url(images/26.jpg)"></div>
+					<div class="home_content">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="home_content_inner">
+										<div class="home_title"><h1>Medicine made with care</h1></div>
+										<div class="home_text">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris quis aliquam. Integer accumsan sodales odio, id tempus velit ullamcorper id. Quisque at erat eu.</p>
+										</div>
+										<div class="button home_button">
+											<a href="#">read more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Slider Progress -->
+			<div class="home_slider_progress"></div>
+		</div>
+	</div>
+
+	<!-- 3 Boxes -->
+
+	<div class="boxes">
+		<div class="container">
+			<div class="row">
+				
+				<!-- Box -->
+				<div class="col-lg-4 box_col">
+					<div class="box working_hours">
+						<div class="box_icon d-flex flex-column align-items-start justify-content-center"><div style="width:29px; height:29px;"><img src="images/alarm-clock.svg" alt=""></div></div>
+						<div class="box_title">Working Hours</div>
+						<div class="working_hours_list">
+							<ul>
+								<li class="d-flex flex-row align-items-center justify-content-start">
+									<div>Monday – Friday</div>
+									<div class="ml-auto">8.00 – 22.00</div>
+								</li>
+								<li class="d-flex flex-row align-items-center justify-content-start">
+									<div>Saturday</div>
+									<div class="ml-auto">Not working</div>
+								</li>
+								<li class="d-flex flex-row align-items-center justify-content-start">
+									<div>Sunday</div>
+									<div class="ml-auto">8.00 – 22.00</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Box -->
+				<div class="col-lg-4 box_col">
+					<div class="box box_appointments">
+						<div class="box_icon d-flex flex-column align-items-start justify-content-center"><div style="width: 29px; height:29px;"><img src="images/phone-call.svg" alt=""></div></div>
+						<div class="box_title">About our service</div>
+						<div class="box_text">The service is provided online for those who are far from us and onother country and this is trusted company nothing will be wrong, welcome and we will develop for you.</div>
+					</div>
+				</div>
+
+				<!-- Box -->
+				<div class="col-lg-4 box_col">
+					<div class="box box_emergency">
+						<div class="box_icon d-flex flex-column align-items-start justify-content-center"><div style="width: 37px; height:37px; margin-left:-4px;"><img src="images/bell.svg" alt=""></div></div>
+						<div class="box_title">Do you need service?</div>
+						<div class="box_phone">+255-624-089-128</div>
+						<div class="box_emergency_text">Call for us and we will develop system for you and your most welcome</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- About -->
+
+	<div class="about">
+		<div class="container">
+			<div class="row row-lg-eq-height">
+				
+				<!-- About Content -->
+				<div class="col-lg-7">
+					<div class="about_content">
+						<div class="section_title"><h2>A great developer team to help your needs</h2></div>
+						<div class="about_text">
+							<p>We the company with great developer team who can help you to develop your project and reach the goals that you want to reach and manage your company or individual bussness. Working with us also develop much technology to you since instead of developing you project also you can learn the developing technology from our sites and youtube channel especially web development, internet of things(iot), automation, Artificial intelligence(computer vision, natural language, data science and machine learning) and desktop application.</p>
+						</div>
+						<div class="button about_button">
+							<a href="{% url 'requestService' %}">send project  request</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- About Image -->
+				<div class="col-lg-5">
+					<div class="about_image"><img src="{% static 'web/images/27.jpg' %}" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Departments -->
+
+	<div class="departments">
+		<div class="departments_background parallax-window" data-parallax="scroll" data-image-src="{% static 'web/images/departments.jpg' %}" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title section_title_light"><h2>Our most popular projects developed</h2></div>
+				</div>
+			</div>
+			<div class="row departments_row row-md-eq-height">
+				
+				<!-- Department -->
+				<div class="col-lg-3 col-md-6 dept_col">
+					<div class="dept">
+						<div class="dept_image"><img src="{% static 'web/images/8.jpg' %}" alt=""></div>
+						<div class="dept_content text-center">
+							<div class="dept_title">Hospital management system</div>
+							<div class="dept_subtitle">Designed by Worntech</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Department -->
+				<div class="col-lg-3 col-md-6 dept_col">
+					<div class="dept">
+						<div class="dept_image"><img src="{% static 'web/images/9.jpg' %}" alt=""></div>
+						<div class="dept_content text-center">
+							<div class="dept_title">School management sysytem</div>
+							<div class="dept_subtitle">Developed by Worntech</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Department -->
+				<div class="col-lg-3 col-md-6 dept_col">
+					<div class="dept">
+						<div class="dept_image"><img src="{% static 'web/images/4.jpg' %}" alt=""></div>
+						<div class="dept_content text-center">
+							<div class="dept_title">Liblary management system</div>
+							<div class="dept_subtitle">Developed by Worntech</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Department -->
+				<div class="col-lg-3 col-md-6 dept_col">
+					<div class="dept">
+						<div class="dept_text">
+							<p>These ara the among of the project developed with our team and we invite you to order your project and we will develop the project for you with low cost, Wherever you are we will reach you and your most welcome. <br>Click the button bellow to send project  request.</p>
+						</div>
+						<div class="button dept_button"><a href="{% url 'requestService' %}">project request</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Services -->
+	<div class="services">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title"><h2>Our  Services Provided</h2></div>
+				</div>
+			</div>
+			<div class="row services_row">
+				
+				<!-- Service -->
+				{% for x in service %}
+				<div class="col-lg-4 col-md-6 service_col">
+					<a href="{% url 'viewservice' x.id %}">
+						<div class="service text-center trans_200">
+							<div class="service_icon"><img class="svg" src=" {{x.image.url}}" alt=""></div>
+							<div class="service_title trans_200">{{x.Project_name}}</div>
+							<div class="service_text">
+								<p>{{x.Project_description}}</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+
+	<!-- Call to action -->
+
+	<div class="cta">
+		<div class="cta_background parallax-window" data-parallax="scroll" data-image-src="{% static 'web/images/17.jpg' %}" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="cta_content text-center">
+						<h2>Your in need in any project or system?</h2>
+						<p>We are here to develop project for you and you will enjoy the services </p>
+						<div class="button cta_button"><a href="{% url 'requestService' %}">send project request</a></div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	{% endblock %}
+
+	<!-- Footer -->
+
+</div>
+
+<script src="{% static 'web/js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'web/styles/bootstrap4/popper.js' %}"></script>
+<script src="{% static 'web/styles/bootstrap4/bootstrap.min.js' %}"></script>
+<script src="{% static 'web/plugins/OwlCarousel2-2.2.1/owl.carousel.js' %}"></script>
+<script src="{% static 'web/plugins/easing/easing.js' %}"></script>
+<script src="{% static 'web/plugins/parallax-js-master/parallax.min.js' %}"></script>
+<script src="{% static 'web/js/custom.js' %}"></script>
+</body>
+</html>
